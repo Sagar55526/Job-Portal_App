@@ -15,7 +15,7 @@ const Navbar = () => {
             <NavLink className="flex flex-shrink-0 items-center mr-4" to="/">
               <img
                 className="h-10 w-auto"
-                src={"src/assets/images/react-icon.png"}
+                src={"/images/react-icon.png"}
                 alt="React Jobs"
                 style={{
                   animation: "spin 4s linear infinite",
