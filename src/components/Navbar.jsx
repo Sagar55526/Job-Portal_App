@@ -15,13 +15,24 @@ const Navbar = () => {
             <NavLink className="flex flex-shrink-0 items-center mr-4" to="/">
               <img
                 className="h-10 w-auto"
-                src="..\assets\images\react-icon.png"
+                src={"src/assets/images/react-icon.png"}
                 alt="React Jobs"
+                style={{
+                  animation: "spin 4s linear infinite",
+                  // You can adjust duration and easing as you like
+                }}
               />
               <span className="hidden md:block text-white text-2xl font-bold ml-2">
                 React Jobs
               </span>
+              <style>{`
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  `}</style>
             </NavLink>
+
             <div className="md:ml-auto">
               <div className="flex space-x-2">
                 <NavLink to="/" className={linkClass}>
