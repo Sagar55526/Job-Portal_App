@@ -44,6 +44,9 @@ const Navbar = () => {
                 <NavLink to="/add-job" className={linkClass}>
                   Add Job
                 </NavLink>
+                <NavLink to="/doneright" className={linkClass}>
+                  DoneRight
+                </NavLink>
               </div>
             </div>
           </div>

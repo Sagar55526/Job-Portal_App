@@ -12,6 +12,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import JobPage, { jobLoader } from "./pages/JobPage"; //reason to take jobLoader in {} is bcz it not a default export.
 import AddJobPage from "./pages/AddJobPage";
 import EditJobPage from "./pages/EditJobPage";
+import DoneRight from "./pages/DoneRight.JSX";
 
 const App = () => {
   const addJob = async (newJob) => {
@@ -58,6 +59,7 @@ const App = () => {
           element={<EditJobPage updateJobSubmit={updateJob} />}
           loader={jobLoader}
         />
+        <Route path="/doneright" element={<DoneRight />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     )
