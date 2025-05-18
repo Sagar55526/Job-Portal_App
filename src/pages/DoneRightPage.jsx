@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 
 // Main Dashboard Component
-export default function DomeRight() {
+export default function DoneRightPage() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [selectedTask, setSelectedTask] = useState(null);
 
